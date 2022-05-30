@@ -6,7 +6,7 @@
 }
 *:focus {
     outline: 1px dashed #333;
-    outline-offset: 3px;
+    outline-offset: 3px ;
 }
 html {
     height: 100%;
@@ -33,6 +33,57 @@ body {
     margin-right: auto;
 }
 
+
+
+/* SITE HEADER STYLES */
+.site-header {
+    background-image: url("../images/jpg/main-bg-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 99px;
+}
+.site-header-top {
+    padding: 60px 0px 58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-logo {
+    display: flex;
+    margin-bottom: 52px;
+}
+.site-logo-img {
+    width: 176px;
+    height: 40px;
+    object-fit: contain;
+    display: block;
+}
+.sitenav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.sitenav-item {
+    padding-bottom: 12px;
+}
+.sitenav-item:not(:last-child) {
+    margin-right: 24px;
+}
+.sitenav-item-active {
+    border-bottom: 2px solid rgba(255,255,255,0.3);
+}
+.sitenav-link {
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
 
 main {
     flex-grow: 1;
