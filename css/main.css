@@ -37,12 +37,14 @@ body {
 
 /* SITE HEADER STYLES */
 .site-header {
-    background-image: url("../images/jpg/main-bg-img.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.4)100%, rgba(0,0,0,0.4)100%), 
+    url("../images/jpg/main-bg-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-bottom: 99px;
 }
+/* SITE HEADER TOP STYLES */
 .site-header-top {
     padding: 60px 0px 58px;
     display: flex;
@@ -84,7 +86,113 @@ body {
     text-transform: uppercase;
     color: #fff;
 }
-
-main {
-    flex-grow: 1;
+/* SITE HEADER BOTTOM STYLES */
+.site-header-bottom {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.bottom-list {
+    list-style: none;
+}
+.bottom-hero {
+    width: 100%;
+    height: 330px;
+    background-image: url("../images/jpg/montain-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 0px 0px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.bottom-item:nth-child(2) .bottom-hero {
+    background-image: url("../images/jpg/map-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bottom-item:nth-child(3) .bottom-hero {
+    background-image: url("../images/jpg/lake-man.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bottom-hero-user {
+    display: flex;
+    align-items:center;
+    margin-bottom: 20px;
+}
+.bottom-hero-user-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 14px;
+}
+.bottom-hero-user-content {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-hero-user-title {
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.bottom-hero-user-text {
+    font-size: 13px;
+    line-height: 19px;
+}
+.bottom-hero-title {
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    width: 503px;
+}
+.bottom-text {
+    padding: 35px 76px 35px 60px;
+    background-color: #fff;
+}
+.bottom-text-paragraph {
+    margin-bottom: 7px;
+}
+.bottom-text-link {
+    font-size: 17px;
+    line-height: 30px;
+    color: #8d4fdb;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.bottom-last-item {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 49px 0px 60px;
+}
+.bottom-last-item-title {
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.bottom-last-item-link {
+    padding: 8px 25px;
+    background-color: #8d4fdb;
+    border-radius: 3px;
+    font-family: 'Montserrat', "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
